@@ -1,12 +1,67 @@
-# O.S-Lab-Project
-Project title: ”STUDENT/FACYLTY QUERY HANDLING SYSTEM ”
+# Student Record Management System
 
-SUBMITTED BY: Akshat Amla(2021a1r064)
-              Ujjwal Maletha(2021a1r068)
-              Vishal Tickoo(2021a1r070)
-              Vivek Koul(2021a1r080)
-              Rakshit Bhari(2021a1r084)
-              
-PROJECT DESCRIPTION:
-Design an online system which can handle student queries. Since there can be multiple requests at any time he wishes to dedicate a fixed amount of time to every request so that everyone gets a fair share of his time. He will log into the system from 10am to 12am only. He wants to have separate requests queues for students and faculty. Implement a strategy for the same. The summary at the end of the session should include the total time he spent on handling queries and average query time.
+## Project Overview
 
+The **Student Record Management System** is a command-line application designed to manage and maintain student records efficiently. This project supports a user-friendly interface for both faculty and students, enabling secure management and access to student data. Faculty can perform CRUD (Create, Read, Update, Delete) operations on student records, while students can view their records, raise queries, and review resolved queries.
+
+---
+
+## Key Features
+
+### Faculty Module:
+- **Add Records**: Faculty can add new student records, including details like name, mobile number, roll number, course, and branch.
+- **View Records**: Display all stored student records.
+- **Search Records**: Search for specific records by roll number.
+- **Modify Records**: Update existing records with new information.
+- **Delete Records**: Remove records for students who are no longer part of the system.
+- **Query Management**:
+  - View all student-raised queries.
+  - Resolve queries and save responses.
+- **Secure Login**: Faculty access is secured with a password-protected login system.
+
+### Student Module:
+- **Search Records**: Students can search for their records by roll number.
+- **Raise Queries**: Students can raise queries about any academic or administrative concerns.
+- **View Resolved Queries**: Access faculty responses to previously raised queries.
+
+---
+
+## Tech Stack
+
+### Programming Language:
+- **C++**
+
+### Libraries and Tools:
+1. **Standard Libraries**: 
+   - `iostream` for input and output operations.
+   - `fstream` for file handling (reading/writing records and queries).
+   - `string` for managing student details and queries.
+   - `vector` for dynamic data handling (if needed for future scalability).
+2. **Console Features**:
+   - `windows.h` for cursor positioning (`gotoxy`) and terminal styling.
+   - `conio.h` for capturing masked input (secure password entry).
+3. **File System**:
+   - `Record.txt`: Stores student records in a `|`-separated format.
+   - `Query.txt`: Stores student-raised queries.
+   - `Solution.txt`: Stores faculty responses to queries.
+
+---
+
+## Benefits and Use Cases
+
+- **Educational Institutes**: Manage large-scale student data efficiently.
+- **Secure and Modular**: Segregated roles for faculty and students ensure data integrity.
+- **User-Friendly**: Command-line interface for straightforward navigation.
+- **Customizable**: Easily extendable to include additional features like report generation or analytics.
+
+---
+
+## Future Enhancements
+
+- **GUI Integration**: Add a graphical interface for better usability.
+- **Database Support**: Migrate from flat file storage to relational databases (e.g., MySQL, SQLite) for scalability.
+- **Cloud Deployment**: Host the application on cloud platforms for accessibility across multiple locations.
+
+---
+
+This project is a robust and secure solution for educational institutions looking to modernize their student data management systems. 🎓
